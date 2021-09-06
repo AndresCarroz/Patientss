@@ -1,12 +1,14 @@
 
 import java.util.Scanner;
 public class Principal {
+
     public static  void main(String[] args) {
         int opc = 0;
         Scanner sc = new Scanner(System.in);
-        Matriz ingreso = new Matriz();
+        Matriz ingresos = new Matriz();
         Ingreso ingresar = new Ingreso();
         Buscar busca = new Buscar();
+
         do {
             System.out.println("********************");
             System.out.println("****** Menu Principal ******");
@@ -20,15 +22,19 @@ public class Principal {
             opc = sc.nextInt();
             switch (opc) {
                 case 1:
-                    ingreso.setPatients();
-                    break;
-                case 2:
-                       ingresar.newInput();
-                    break;
-                case 3:
-                    busca.getPatient();
+                    ingresos.setPatients();
                     break;
 
+                case 2:
+
+                    ingresar.newInput();
+                    break;
+                case 3:
+
+                    busca.getPatient();
+                    break;
+                default:
+                    break;
             }
 
 //fin main

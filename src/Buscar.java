@@ -1,11 +1,11 @@
 import java.util.Scanner;
-public class Buscar extends Ingreso {
+public class Buscar  {
    Scanner sc = new Scanner(System.in);
  Ingreso ingresar = new Ingreso();
-
+    Paciente[] patients = ingresar.newInput();
 
     public void getPatient(){
-        Paciente[] patients = ingresar.newInput();
+
         System.out.print("Ingrese el Rut del paciente a buscar : ");
         int c = sc.nextInt();
         for (int i = 0; i < patients.length; i++)

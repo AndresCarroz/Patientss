@@ -1,16 +1,13 @@
 import java.util.Scanner;
-public class Ingreso {
-
+public class Ingreso extends Matriz{
     Scanner sc = new Scanner(System.in);
-    int x;
-Matriz input = new Matriz();
+
 
     public Paciente[] newInput(){
-        Paciente[] patients = new Paciente[input.setPatients()];
-        System.out.println("Modulo para Ingresar ");
-        x = sc.nextInt();
+        Paciente[] patients = new Paciente[setPatients().length];
         for (int i = 0; i < patients.length; i++)
     {
+        System.out.println("Modulo para Ingresar ");
         System.out.println("*****************");
         System.out.println("Pacientes: " + i);
         patients[i] = new Paciente();
@@ -31,5 +28,6 @@ Matriz input = new Matriz();
 
         return patients;
     }
+
 
 }
